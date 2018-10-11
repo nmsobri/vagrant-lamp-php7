@@ -74,4 +74,4 @@ end
 ```
 
 #### Screenshot Of Localhost
-![ScreenShot](http://i.imgur.com/EDHyAdM.png)
+![ScreenShot](https://i.imgur.com/Jn1zlAT.png)
