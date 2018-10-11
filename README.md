@@ -22,7 +22,7 @@ Usage
 
 ### Startup
 	$ git clone https://github.com/slier81/vagrant-lamp-php7.git
-	$ cd vagrant-lamp
+	$ cd vagrant-lamp-php7
 	$ vagrant up
 
 That is pretty simple.
