@@ -87,17 +87,18 @@ sudo gem install mailcatcher
 # Create Mailcatcher upstart
 cat > $mailcatcher_config_file << EOL
 [Unit]
-Description=MailCatcher
-Documentation=http://mailcatcher.me/
- 
+Description=Mailcatcher Service
+After=network.service vagrant.mount
 [Service]
 Type=simple
-ExecStart=/usr/bin/env $(which mailcatcher) --foreground --http-ip=0.0.0.0
+ExecStart=/usr/local/bin/mailcatcher --foreground --ip 0.0.0.0
 Restart=always
- 
 [Install]
 WantedBy=multi-user.target
 EOL
+
+sudo systemctl daemon-reload
+sudo systemctl enable mailcatcher.service #Start mailcatcher during machine boot
 
 # Enable Mailcatcher with php
 echo "sendmail_path = /usr/bin/env $(which catchmail) -f webmaster@localhost" >> /etc/php/7.2/mods-available/mailcatcher.ini
