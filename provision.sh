@@ -3,7 +3,7 @@
 # Credential Variable
 MYSQL_PASS='root'
 PHPMYADMIN_PASS='root'
-RABBITMQ_PASS ='root'
+RABBITMQ_PASS='root'
 
 # Config File
 php_config_file='/etc/php/7.2/apache2/php.ini'
