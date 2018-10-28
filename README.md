@@ -13,41 +13,43 @@ And this project aims to make it very easy to spinup a complete LAMP stack in a 
 
 
 ## Requirements
----
 * VirtualBox <http://www.virtualbox.com>
 * Vagrant <http://www.vagrantup.com>
 * Git <http://git-scm.com/>
   
 
 ## Usage
----
+
+
 
 #### Startup
 ```
-    $ git clone https://github.com/slier81/vagrant-lamp-php7.git
-    $ cd vagrant-lamp-php7
-    $ vagrant up
+$ git clone https://github.com/slier81/vagrant-lamp-php7.git
+$ cd vagrant-lamp-php7
+$ vagrant up
 ```
 
 That is pretty simple.
 
+
 ## Connecting
----
+
 
 #### Apache
 The Apache server is available at [10.10.10.10](http://10.10.10.10)
-
 
 #### MySQL
 Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.
 
 Username: root
+
 Password: root
 
 #### PhpMyadmin
 PhpMyadmin is available at [10.10.10.10/phpmyadmin](http://10.10.10.10/phpmyadmin)
 
 Username: root
+
 Password: root
 
 
@@ -57,6 +59,10 @@ Mailcatcher is available at [10.10.10.10:1080](http://10.10.10.10:1080)
 
 #### RabbitMq
 RabbitMq is available at [10.10.10.10:15672](http://10.10.10.10:15672)
+
+Username: root
+
+Password: root
 
 
 ## Technical Details
@@ -93,9 +99,9 @@ $ vagrant ssh
 If u got an error while running `composer install`, this is probably due to insufficient memory.Try increase your virtualbox memory.Add below code to `Vagrantfile`
 
 ```
-    config.vm.provider "virtualbox" do |vb|
-        vb.customize ["modifyvm", :id, "--memory", "1024"] #1gb
-    end
+config.vm.provider "virtualbox" do |vb|
+	vb.customize ["modifyvm", :id, "--memory", "1024"] #1gb
+end
 ```
 
 
