@@ -279,6 +279,7 @@ $pageContents = <<< EOPAGE
 			<li><a href="http://{$host}?phpinfo=1">phpinfo()</a></li>
 			<li><a href="http://{$host}/phpmyadmin">phpmyadmin</a></li>
 			<li><a href="http://{$host}:1080">mailcatcher</a></li>
+			<li><a href="http://{$host}:15672">rabbitmq</a></li>
 		</ul>
 		<h2>{$langues[$langue]['txtProjet']}</h2>
 		<ul class="projects">
