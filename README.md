@@ -39,18 +39,14 @@ That is pretty simple.
 The Apache server is available at [10.10.10.10](http://10.10.10.10)
 
 #### MySQL
-Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.
-
-Username: root
-
-Password: root
+Externally the MySQL server is available at port 8889, and when running on the VM it is available as a socket or at port 3306 as usual.  
+**Username**: root  
+**Password**: root
 
 #### PhpMyadmin
-PhpMyadmin is available at [10.10.10.10/phpmyadmin](http://10.10.10.10/phpmyadmin)
-
-Username: root
-
-Password: root
+PhpMyadmin is available at [10.10.10.10/phpmyadmin](http://10.10.10.10/phpmyadmin)  
+**Username**: root  
+**Password**: root
 
 
 #### Mailcatcher
@@ -58,11 +54,9 @@ Mailcatcher is available at [10.10.10.10:1080](http://10.10.10.10:1080)
 
 
 #### RabbitMq
-RabbitMq is available at [10.10.10.10:15672](http://10.10.10.10:15672)
-
-Username: root
-
-Password: root
+RabbitMq is available at [10.10.10.10:15672](http://10.10.10.10:15672)  
+**Username**: root  
+**Password**: root
 
 
 ## Technical Details
