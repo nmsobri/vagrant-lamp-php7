@@ -11,10 +11,6 @@ xdebug_config_file='/etc/php/7.2/mods-available/xdebug.ini'
 mysql_config_file='/etc/mysql/my.cnf'
 mailcatcher_config_file='/etc/systemd/system/mailcatcher.service'
 
-IPADDR=$(/sbin/ifconfig eth0 | awk '/inet / { print $2 }' | sed 's/addr://')
-sed -i "s/^${IPADDR}.*//" hosts
-echo $IPADDR ubuntu.localhost >> /etc/hosts			# Just to quiet down some error messages
-
 # Update the server
 sudo apt-get -y update
 sudo apt-get -y upgrade
