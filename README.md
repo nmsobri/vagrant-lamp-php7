@@ -94,7 +94,7 @@ If u got an error while running `composer install`, this is probably due to insu
 
 ```
 config.vm.provider "virtualbox" do |vb|
-	vb.customize ["modifyvm", :id, "--memory", "1024"] #1gb
+    vb.customize ["modifyvm", :id, "--memory", "1024"] #1gb
 end
 ```
 
