@@ -117,6 +117,7 @@ sudo systemctl enable rabbitmq-server
 sudo rabbitmq-plugins enable rabbitmq_management
 sudo rabbitmqctl add_user root $RABBITMQ_PASS
 sudo rabbitmqctl set_user_tags root administrator
+sudo rabbitmqctl set_permissions root ".*" ".*" ".*"
 
 # Install Supervisor
 sudo apt-get install -y supervisor
