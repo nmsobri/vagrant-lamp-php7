@@ -30,7 +30,7 @@ sudo ufw allow OpenSSH
 sudo ufw allow in "Apache Full"
 
 # Install Php
-sudo apt-get -y install php libapache2-mod-php php-curl php-mysql php-php-pgsql php-sqlite3 php-xdebug php-bcmath
+sudo apt-get -y install php libapache2-mod-php php-curl php-mysql php-pgsql php-mongodb php-sqlite3 php-xdebug php-bcmath
 
 # Configure Php
 sed -i "s/display_startup_errors = Off/display_startup_errors = On/g" $php_config_file
