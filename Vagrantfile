@@ -6,7 +6,8 @@ VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/bionic64"
-
+  config.vm.hostname = "ubuntu"
+  
   # Forward ports to Apache, MySQL, MailCatcher
   config.vm.network "private_network", ip: "10.10.10.10"
   config.vm.synced_folder "www", "/var/www/html", create: true
